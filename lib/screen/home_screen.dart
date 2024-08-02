@@ -31,7 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
               if (!snapshot.hasData){
                 return Center(
-                  child: CircularProgressIndicator(color: Colors.white),
+                  child: Text(
+                    'Youtube',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 );
               }
 
